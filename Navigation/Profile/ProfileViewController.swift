@@ -27,6 +27,12 @@ class ProfileViewController: UIViewController {
         
         view.backgroundColor = .systemGray6
         
+        #if DEBUG
+        view.backgroundColor = .red
+        #else
+        view.backgroundColor = .green
+        #endif
+        
         addSubviews()
         viewWillLayoutSubviews()
         setupTableView()

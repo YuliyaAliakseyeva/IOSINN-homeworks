@@ -80,7 +80,6 @@ class ProfileHeaderView: UIView {
     }
     
     @objc func tapAvatar() {
-        let action = completion
         
         print("Did tap Avatar")
     }
