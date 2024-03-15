@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3E0FC0B82BA4721E00CD90DE /* StorageService.h in Headers */ = {isa = PBXBuildFile; fileRef = 3E0FC0B72BA4721E00CD90DE /* StorageService.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3E0FC0BB2BA4721E00CD90DE /* StorageService.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E0FC0B52BA4721E00CD90DE /* StorageService.framework */; };
+		3E0FC0BC2BA4721E00CD90DE /* StorageService.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3E0FC0B52BA4721E00CD90DE /* StorageService.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		3E0FC0C12BA4722600CD90DE /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EE168F72B611D540032901E /* Post.swift */; };
 		3E10212D2B63D99700F229AC /* ProfileHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E10212C2B63D99700F229AC /* ProfileHeaderView.swift */; };
 		3EB15FCC2B74FB2C0085C80F /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EB15FCB2B74FB2C0085C80F /* LogInViewController.swift */; };
 		3EB15FCE2B7CE13C0085C80F /* PostForProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EB15FCD2B7CE13C0085C80F /* PostForProfile.swift */; };
@@ -23,12 +27,37 @@
 		3EE168F02B5FC0D20032901E /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EE168EF2B5FC0D20032901E /* FeedViewController.swift */; };
 		3EE168F22B5FC0E10032901E /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EE168F12B5FC0E10032901E /* ProfileViewController.swift */; };
 		3EE168F42B6102730032901E /* PostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EE168F32B6102730032901E /* PostViewController.swift */; };
-		3EE168F82B611D540032901E /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EE168F72B611D540032901E /* Post.swift */; };
 		3EE168FA2B6121230032901E /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EE168F92B6121230032901E /* InfoViewController.swift */; };
 		3EE88B362B949A7A005D81FA /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EE88B352B949A79005D81FA /* CustomButton.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		3E0FC0B92BA4721E00CD90DE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3EE168D02B5FBD1B0032901E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3E0FC0B42BA4721E00CD90DE;
+			remoteInfo = StorageService;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		3E0FC0BD2BA4721E00CD90DE /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				3E0FC0BC2BA4721E00CD90DE /* StorageService.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		3E0FC0B52BA4721E00CD90DE /* StorageService.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = StorageService.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3E0FC0B72BA4721E00CD90DE /* StorageService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StorageService.h; sourceTree = "<group>"; };
 		3E10212C2B63D99700F229AC /* ProfileHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileHeaderView.swift; sourceTree = "<group>"; };
 		3EB15FCB2B74FB2C0085C80F /* LogInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
 		3EB15FCD2B7CE13C0085C80F /* PostForProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostForProfile.swift; sourceTree = "<group>"; };
@@ -53,16 +82,33 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		3EE168D52B5FBD1C0032901E /* Frameworks */ = {
+		3E0FC0B22BA4721E00CD90DE /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		3EE168D52B5FBD1C0032901E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3E0FC0BB2BA4721E00CD90DE /* StorageService.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3E0FC0B62BA4721E00CD90DE /* StorageService */ = {
+			isa = PBXGroup;
+			children = (
+				3E0FC0B72BA4721E00CD90DE /* StorageService.h */,
+				3EE168F72B611D540032901E /* Post.swift */,
+			);
+			path = StorageService;
+			sourceTree = "<group>";
+		};
 		3E10212B2B63D95F00F229AC /* Profile */ = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +131,7 @@
 			isa = PBXGroup;
 			children = (
 				3EE168DA2B5FBD1C0032901E /* Navigation */,
+				3E0FC0B62BA4721E00CD90DE /* StorageService */,
 				3EE168D92B5FBD1C0032901E /* Products */,
 			);
 			sourceTree = "<group>";
@@ -93,6 +140,7 @@
 			isa = PBXGroup;
 			children = (
 				3EE168D82B5FBD1C0032901E /* Navigation.app */,
+				3E0FC0B52BA4721E00CD90DE /* StorageService.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -125,14 +173,42 @@
 		3EE168F62B611C7A0032901E /* Data */ = {
 			isa = PBXGroup;
 			children = (
-				3EE168F72B611D540032901E /* Post.swift */,
 			);
 			path = Data;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		3E0FC0B02BA4721E00CD90DE /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3E0FC0B82BA4721E00CD90DE /* StorageService.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
+		3E0FC0B42BA4721E00CD90DE /* StorageService */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3E0FC0C02BA4721E00CD90DE /* Build configuration list for PBXNativeTarget "StorageService" */;
+			buildPhases = (
+				3E0FC0B02BA4721E00CD90DE /* Headers */,
+				3E0FC0B12BA4721E00CD90DE /* Sources */,
+				3E0FC0B22BA4721E00CD90DE /* Frameworks */,
+				3E0FC0B32BA4721E00CD90DE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = StorageService;
+			productName = StorageService;
+			productReference = 3E0FC0B52BA4721E00CD90DE /* StorageService.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 		3EE168D72B5FBD1C0032901E /* Navigation */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3EE168EC2B5FBD210032901E /* Build configuration list for PBXNativeTarget "Navigation" */;
@@ -140,10 +216,12 @@
 				3EE168D42B5FBD1C0032901E /* Sources */,
 				3EE168D52B5FBD1C0032901E /* Frameworks */,
 				3EE168D62B5FBD1C0032901E /* Resources */,
+				3E0FC0BD2BA4721E00CD90DE /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				3E0FC0BA2BA4721E00CD90DE /* PBXTargetDependency */,
 			);
 			name = Navigation;
 			productName = Navigation;
@@ -160,6 +238,9 @@
 				LastSwiftUpdateCheck = 1520;
 				LastUpgradeCheck = 1520;
 				TargetAttributes = {
+					3E0FC0B42BA4721E00CD90DE = {
+						CreatedOnToolsVersion = 15.3;
+					};
 					3EE168D72B5FBD1C0032901E = {
 						CreatedOnToolsVersion = 15.2;
 					};
@@ -179,11 +260,19 @@
 			projectRoot = "";
 			targets = (
 				3EE168D72B5FBD1C0032901E /* Navigation */,
+				3E0FC0B42BA4721E00CD90DE /* StorageService */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		3E0FC0B32BA4721E00CD90DE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		3EE168D62B5FBD1C0032901E /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -196,6 +285,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		3E0FC0B12BA4721E00CD90DE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3E0FC0C12BA4722600CD90DE /* Post.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		3EE168D42B5FBD1C0032901E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -208,7 +305,6 @@
 				3EB15FCC2B74FB2C0085C80F /* LogInViewController.swift in Sources */,
 				3EE168F22B5FC0E10032901E /* ProfileViewController.swift in Sources */,
 				3EE168FA2B6121230032901E /* InfoViewController.swift in Sources */,
-				3EE168F82B611D540032901E /* Post.swift in Sources */,
 				3EB15FD62B87D55F0085C80F /* PhotosForProfile.swift in Sources */,
 				3EE168F02B5FC0D20032901E /* FeedViewController.swift in Sources */,
 				3EE168DE2B5FBD1C0032901E /* SceneDelegate.swift in Sources */,
@@ -222,6 +318,14 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		3E0FC0BA2BA4721E00CD90DE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3E0FC0B42BA4721E00CD90DE /* StorageService */;
+			targetProxy = 3E0FC0B92BA4721E00CD90DE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin PBXVariantGroup section */
 		3EE168E62B5FBD210032901E /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
@@ -234,6 +338,76 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		3E0FC0BE2BA4721E00CD90DE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = com.exercise.first.StorageService;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_INSTALL_OBJC_HEADER = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		3E0FC0BF2BA4721E00CD90DE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = com.exercise.first.StorageService;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_INSTALL_OBJC_HEADER = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		3EE168EA2B5FBD210032901E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -356,6 +530,7 @@
 		3EE168ED2B5FBD210032901E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -382,6 +557,7 @@
 		3EE168EE2B5FBD210032901E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -408,6 +584,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		3E0FC0C02BA4721E00CD90DE /* Build configuration list for PBXNativeTarget "StorageService" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3E0FC0BE2BA4721E00CD90DE /* Debug */,
+				3E0FC0BF2BA4721E00CD90DE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		3EE168D32B5FBD1B0032901E /* Build configuration list for PBXProject "Navigation" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
